@@ -45,8 +45,11 @@ section.up-grade{
 }
 
 aside{
-    height: 100%;
-    width: 45px;
+    height:calc(100% - 75px);
+    width: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
 }
 
 main{
@@ -60,6 +63,32 @@ section.taskbar{
     width: 100%;
 }
 
+/* Section Aside */
+aside div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside img.logo-small{
+    height: 25px;    
+    width: 25px;
+    margin: .3rem .5rem .5rem .5rem;
+}
+
+aside img.logo-big{
+    
+    display: none;
+}
+
+aside i{
+    text-align: center;
+    padding: .4rem;
+}
+
+aside span{
+    display: none;
+}
 
 
 @media screen and (min-width:576px){
@@ -67,6 +96,27 @@ section.taskbar{
     aside{
         width: 250px;
     }
+
+    aside > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    aside span{
+        display: block;
+    }
+
+    aside img.logo-small{
+        display: none;
+    }
+
+    aside img.logo-big{
+        display: block;
+    }
+
+
 }
 
 @media screen and (min-width:768px){
