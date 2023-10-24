@@ -53,7 +53,7 @@ aside{
 }
 
 main{
-    width: 90%;
+    width: 100%;
     color: white;
 }
 
@@ -98,6 +98,7 @@ button.button-download{
     top: 1rem;
 }
 
+/* MAIN */
 /* HEADER */
 
 header ul{
@@ -114,11 +115,23 @@ header ul li{
 
 /* SECTION MAIN FIRST SQUARES */
 
-main div.container-squares{
-    display: flex;
-    flex-wrap: wrap;
+section div.container-squares{
     height: calc(100% - (75px + 75px + 34px));
     overflow-y: auto;
+    /* gap: 1rem; */
+}
+
+section.container-squares div.content{
+    display: flex;
+}
+
+section article.square{
+    height: 170px;
+    width: 170px;
+}
+
+article.square img{
+    width: 100%;
 }
 
 
