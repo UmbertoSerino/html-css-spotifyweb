@@ -1,9 +1,40 @@
+/* RESET */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
-body{
-    background-color: black;
+.flex{
+    display: flex;
+}
+
+.j-spacebw{
+    justify-content: space-between;
+}
+
+/* Background-color */
+.bg-color-black{
+    background-color: #000000;
+}
+
+.bg-color-darkgray{
+    background-color: #080B12;
+}
+
+.gb-color-darkblue{
+    background-color: #141922;
+}
+
+
+section.bg-color-darkgray{
+    height: 70px;
+    width: 100vw;
+}
+
+aside{
+    height: 100vh;
+    width: 45px
+
 }
