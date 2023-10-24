@@ -3,8 +3,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
+
+/* Multi use */
 
 .flex{
     display: flex;
@@ -23,18 +24,44 @@
     background-color: #080B12;
 }
 
-.gb-color-darkblue{
+.bg-color-darkblue{
     background-color: #141922;
 }
 
+.bg-color-gray{
+    background-color: #282828;
+}
 
-section.bg-color-darkgray{
-    height: 70px;
-    width: 100vw;
+
+/* SECTION */
+
+div.container{
+    height: 100vh;
+}
+
+section.up-grade{
+    width: 100%;
+    height: 75px;
 }
 
 aside{
-    height: 100vh;
-    width: 45px
+    height: 100%;
+    width: 10%;
+}
 
+main{
+    width: 90%;
+}
+
+section.taskbar{
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width:576px){
+    
 }
