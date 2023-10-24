@@ -77,7 +77,7 @@ aside img.logo-small{
 }
 
 aside img.logo-big{
-    
+
     display: none;
 }
 
@@ -88,6 +88,28 @@ aside i{
 
 aside span{
     display: none;
+}
+
+/* SECTION UP-GRADE */
+
+button.button-download{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+/* HEADER */
+
+header ul{
+    color: white;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header ul li{
+    margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 
