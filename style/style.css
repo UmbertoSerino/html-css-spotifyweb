@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* Multi use */
 
 .flex{
@@ -42,10 +43,8 @@ div.big-container{
 
 section.up-grade{
     width: 100%;
-    height: 75px;
-    clear: both;
-    content: "";
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 aside{
@@ -106,7 +105,7 @@ button.button-download{
     border-radius: 3rem;
     color: white;
     padding: .7rem 1.5rem;
-    margin: 1.3rem .3rem;
+    margin: .9rem .3rem 1.3rem;
     font-size: .7rem;
 }
 
@@ -123,6 +122,7 @@ header ul{
 header ul li{
     margin-right: 1rem;
     margin-top: 1rem;
+    font-size: .7rem;
 }
 
 /* SECTION MAIN FIRST SQUARES */
