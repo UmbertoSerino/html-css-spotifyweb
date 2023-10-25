@@ -50,7 +50,7 @@ section.up-grade{
 }
 
 aside{
-    height:calc(100vh - 75px);
+    height:calc(100vh - 70px);
     width: 40px;
     flex-direction: column;
     justify-content: space-between;
@@ -61,13 +61,13 @@ main{
     /* width: calc(100% - 40px); */
     color: white;
     overflow: auto;
-    height: calc(100% - 75px);
+    height: calc(100% - 70px);
 }
 
 section.taskbar{
     position: absolute;
     bottom: 0;
-    height: 75px;
+    height: 70px;
     width: 100%;
 }
 
@@ -81,7 +81,6 @@ aside img{
     height: 22px;    
     margin-bottom: .3rem;
     color: #D2D2D2;
-
 }
 
 aside img.logo-small{
@@ -90,8 +89,47 @@ aside img.logo-small{
 
 }
 
+aside h2{
+    font-size: .7rem;
+    margin-top: .6rem;
+    margin-bottom: .5rem;
+}
+
+aside button.button-plus{
+    height: 32px;
+    width: 32px;
+    margin-right: .5rem;
+    color: black;
+    background-color: #A3A3A3;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+aside section.navbar span{
+    line-height: 27px;
+    font-size: .66rem;
+    font-weight: 800;
+}
+
+aside section.profile span.color-white{
+    line-height: 40px;
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+br{
+    color: gray;
+    height: 1px;
+}
+
+.color-white{
+    color: white;
+}
+
 aside img.logo-big,
 span,
+button.button-plus,
+li,
 h2{
     display: none;
 }
@@ -127,10 +165,6 @@ span{
     color: #75787C;
 }
 
-aside ul li{
-    list-style-type: none;
-}
-
 /* SECTION UP-GRADE */
 
 button.button-download{
@@ -162,6 +196,7 @@ ul li{
     color: #75787C;
     font-weight: 800;
     margin: 1rem .5rem;
+    list-style-type: none;
 }
 
 /* SECTION MAIN FIRST PLAYLIST */
@@ -216,6 +251,11 @@ article.circular img{
     border-radius: 50%;
 }
 
+section.taskbar{
+    
+}
+
+
 @media screen and (min-width:576px){
 
     aside{
@@ -226,9 +266,14 @@ article.circular img{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 1rem;
+        margin-left: 1rem;
     }
 
+    aside img.logo-big{
+        height: 30px;
+        margin-top: .8rem;
+        margin-bottom: .7rem;
+    }
 
     aside div{
         display: flex;
@@ -237,13 +282,26 @@ article.circular img{
 
     aside img.logo-big,
     span,
-    h2{
+    button.button-plus,
+    h2,
+    li{
         display: block;
     }
 
     aside img.logo-small{
         display: none;
     }
+
+
+
+    aside img{
+        height: 22px;    
+        margin-bottom: .3rem;
+        margin-right: .5rem;
+        color: #75787C;
+    /* color: #D2D2D2; */
+    }
+    
 
 }
 

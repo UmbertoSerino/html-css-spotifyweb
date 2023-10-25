@@ -23,14 +23,14 @@
     <div class="big-container flex">
 
         <aside class="bg-color-black flex">
-            <section>
+            <section class="navbar">
                 <div>
                 <img class="logo-small" src="./img/logo-small.svg" alt="logo without spotify writing">
                 <img class="logo-big" src="./img/logo.svg" alt="Logo big spotify">
                 </div>
                 <div>
                     <img src="./img/home.svg" alt="symbol home">
-                    <span>Home</span>
+                    <span class="color-white">Home</span>
                 </div>
                 <div>
                     <img src="./img/search.svg" alt="symbol searches">
@@ -40,9 +40,11 @@
                     <img src="./img/libreria.svg" alt="Symbol library">
                     <span>La tua libreria</span>
                 </div>
-                <h2>Playlist</h2>
+                <h2>PLAYLIST</h2>
                 <div class="create-playlist">
-                    <span class="bg-color-gray">+</span>
+                    <button class="button-plus">+</button>
+                    <span>Crea Playlist</span>
+                </div>
                 <div>
                     <ul>
                         <li>Nome Playlist</li>
@@ -52,9 +54,7 @@
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
-
                     </ul>
-                </div>
                 </div>
             </section>
             <section class="profile">
@@ -64,7 +64,7 @@
                 </div>
                 <div>
                     <img src="/img/profile.svg" alt="">
-                    <span>John Doe</span>
+                    <span class="color-white">John Doe</span>
                 </div>
             </section>
         </aside>
@@ -155,6 +155,15 @@
     </div>
         <section class="taskbar bg-color-gray">
             <!-- taskbar, in fixed 100% largo, in flex, j-space-bw 3 div -->
+            <div class="like">
+
+            </div>
+            <div class="play">
+
+            </div>
+            <div class="sound">
+
+            </div>
         </section>
 </body>
 </html>
