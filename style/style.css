@@ -78,10 +78,18 @@ aside div{
     flex-direction: column;
     align-items: center;
 }
+
+aside img{
+    height: 22px;    
+    margin-bottom: .3rem;
+    color: #D2D2D2;
+
+}
+
 aside img.logo-small{
-    height: 25px;    
-    width: 25px;
-    margin: .3rem .5rem .5rem .5rem;
+    height: 24px;
+    margin: .3rem .5rem .7rem;
+
 }
 
 aside img.logo-big{
@@ -95,6 +103,16 @@ aside i{
 
 aside span{
     display: none;
+}
+
+aside div.section-profile > div:first-child img{
+    height: 13px;
+}
+
+aside div.section-profile > div:last-child img{
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: .7rem;
 }
 
 /* SECTION UP-GRADE */
