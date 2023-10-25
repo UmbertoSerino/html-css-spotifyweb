@@ -258,7 +258,9 @@ section.taskbar{
     justify-content: space-between;
 }
 
-.taskbar div.like{
+.taskbar div.like,
+div.command-bar,
+div.slider{
     height: 100%;
     padding: 1rem;
     display: flex;
@@ -275,10 +277,18 @@ div.title-track{
 
 div.title-track span{
     font-size: .6rem;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
+div.like i{
+    color: #75787C;
+    margin-left: .3rem;
+}
+
+div.command-bar{
+    flex-direction: column;
+    color: white;
+}
 
 
 @media screen and (min-width:576px){
