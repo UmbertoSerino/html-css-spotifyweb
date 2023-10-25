@@ -36,7 +36,6 @@ body{
     background-color: #282828;
 }
 
-
 /* SECTION */
 
 div.big-container{
@@ -59,9 +58,10 @@ aside{
 }
 
 main{
-    width: calc(100% - 40px);
+    /* width: calc(100% - 40px); */
     color: white;
     overflow: auto;
+    height: calc(100% - 75px);
 }
 
 section.taskbar{
@@ -132,11 +132,26 @@ header ul li{
 
 /* SECTION MAIN FIRST SQUARES */
 
-h2{
+section.container-squares h2 {
     font-size: 1.3rem;
-    margin: 1rem;
-    
+    margin: 1rem; 
 }
+
+section.container-squares h3 {
+    font-size: .75rem;
+    text-align: center;
+    margin: 0.7rem;
+}
+
+section.container-squares span {
+    text-align: center;
+    display: block;
+    color: #75787C;
+    font-size: 0.66rem;
+    font-weight: 800;
+    margin-bottom: .4rem;
+}
+
 
 section div.container-squares{
     height: calc(100% - (75px + 75px + 34px));
@@ -152,8 +167,7 @@ section.container-squares div.content{
 
 section article.square{
     width: calc(50% - 1rem);
-    margin-right: 1rem;
-    
+    margin-right: 1rem;   
 }
 
 article.square img{
@@ -192,8 +206,16 @@ article.square img{
 
 @media screen and (min-width:768px){
     
+    section article.square{
+        width: calc(25% - 1rem);
+    }
+    
 }
 
 @media screen and (min-width:992px){
+
+    section article.square{
+        width: calc((100% / 6) - 1rem);
+    }
     
 }
