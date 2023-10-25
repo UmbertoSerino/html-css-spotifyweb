@@ -130,21 +130,24 @@ header ul li{
     margin: 1rem .5rem;
 }
 
-/* SECTION MAIN FIRST SQUARES */
+/* SECTION MAIN FIRST PLAYLIST */
 
-section.container-squares h2 {
-    font-size: 1.3rem;
-    margin: 1rem; 
+section.container-playlist{
+    margin: 1rem;
 }
 
-section.container-squares h3 {
+section.container-playlist h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+section.container-playlist h3 {
     font-size: .75rem;
     text-align: center;
     margin: 0.7rem;
 }
 
-section.container-squares span {
-    text-align: center;
+section.container-playlist span {
     display: block;
     color: #75787C;
     font-size: 0.66rem;
@@ -153,26 +156,32 @@ section.container-squares span {
 }
 
 
-section div.container-squares{
+section div.container-playlist{
     height: calc(100% - (75px + 75px + 34px));
     overflow-y: auto;
 }
 
-section.container-squares div.content{
+section.container-playlist div.content{
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% - 2rem);
-    margin: 1rem;
-}
-
-section article.square{
-    width: calc(50% - 1rem);
-    margin-right: 1rem;   
-}
-
-article.square img{
     width: 100%;
 }
+
+section article.square,
+.circular {
+    width: calc(50% - .5rem);
+    margin-right: .5rem;   
+    text-align: center;
+}
+
+section.container-playlist img{
+    width: 100%;
+}
+
+article.circular img{
+    border-radius: 50%;
+}
+
 
 
 
@@ -206,15 +215,17 @@ article.square img{
 
 @media screen and (min-width:768px){
     
-    section article.square{
+    section article.square,
+    .circular{
         width: calc(25% - 1rem);
     }
-    
+
 }
 
 @media screen and (min-width:992px){
 
-    section article.square{
+    section article.square,
+    .circular{
         width: calc((100% / 6) - 1rem);
     }
     
