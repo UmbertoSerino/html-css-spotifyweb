@@ -132,11 +132,6 @@ aside section.profile div:first-child {
     color: white;
 }
 
-hr{
-    color: #75787C;
-    width: 80%;
-    margin-top: .5rem;
-}
 
 aside img.logo-big,
 span,
@@ -300,6 +295,24 @@ div.like i{
 div.command-bar{
     flex-direction: column;
     color: white;
+}
+
+div.command-bar i{
+    margin: 0 .7rem;
+}
+
+.fa-circle-play{
+    font-size: 1.6rem;
+}
+
+div.slider {
+
+}
+
+div.slider span{
+    color: white;
+    font-size: .66rem;
+
 }
 
 section.taskbar span{
