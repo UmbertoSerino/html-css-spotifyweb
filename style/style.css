@@ -58,7 +58,7 @@ aside{
 }
 
 main{
-    /* width: calc(100% - 40px); */
+    width: calc(100% - 40px);
     color: white;
     overflow: auto;
     height: calc(100% - 70px);
@@ -117,13 +117,25 @@ aside section.profile span.color-white{
     font-weight: 800;
 }
 
-br{
-    color: gray;
-    height: 1px;
+aside section.profile div:first-child span{
+    font-size: .66rem;
+    font-weight: bold;
 }
+
+aside section.profile div:first-child {
+    border-bottom: 1px solid gray;
+    width: 80%;
+}
+
 
 .color-white{
     color: white;
+}
+
+hr{
+    color: #75787C;
+    width: 80%;
+    margin-top: .5rem;
 }
 
 aside img.logo-big,
@@ -258,11 +270,11 @@ section.taskbar{
     justify-content: space-between;
 }
 
-.taskbar div.like,
+.taskbar div.soundtrack,
 div.command-bar,
 div.slider{
     height: 100%;
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     align-items: center;
 }
@@ -290,11 +302,15 @@ div.command-bar{
     color: white;
 }
 
+section.taskbar span{
+    display: block;
+}
+
 
 @media screen and (min-width:576px){
 
     aside{
-        width: 970px;
+        width: 170px;
     }
 
     aside section{
@@ -327,8 +343,6 @@ div.command-bar{
         display: none;
     }
 
-
-
     aside img{
         height: 22px;    
         margin-bottom: .3rem;
@@ -336,17 +350,21 @@ div.command-bar{
         color: #75787C;
     /* color: #D2D2D2; */
     }
-    
+
+    main{
+        width: calc(100% - 170px);
+        color: white;
+        overflow: auto;
+        height: calc(100% - 70px);
+    }
 
 }
 
 @media screen and (min-width:768px){
-    
     section article.square,
     .circular{
         width: calc(25% - 1rem);
     }
-
 }
 
 @media screen and (min-width:992px){
