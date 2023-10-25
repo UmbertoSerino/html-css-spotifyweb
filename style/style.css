@@ -111,6 +111,10 @@ aside section.navbar span{
     font-weight: 800;
 }
 
+section.navbar span:hover{
+    border-left: 1px solid lime;
+}
+
 aside section.profile span.color-white{
     line-height: 40px;
     font-size: .7rem;
@@ -187,6 +191,10 @@ button.button-download{
     font-size: .7rem;
 }
 
+button.button-download:hover{
+    transform: scale(1.07);
+}
+
 /* MAIN */
 /* HEADER */
 
@@ -196,6 +204,12 @@ header ul{
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 .5rem;
+    display: inline;
+    border-bottom: 1px solid transparent;
+}
+
+header ul li:hover{
+    border-bottom: 1px solid lime;
 }
 
 ul li{
@@ -204,6 +218,7 @@ ul li{
     font-weight: 800;
     margin: 1rem .5rem;
     list-style-type: none;
+    border-bottom: 1px solid transparent;
 }
 
 /* SECTION MAIN FIRST PLAYLIST */
@@ -267,7 +282,8 @@ section.taskbar{
 
 .taskbar div.soundtrack,
 div.command-bar,
-div.slider{
+div.slider,
+div.command-sound{
     height: 100%;
     padding: .5rem;
     display: flex;
@@ -297,7 +313,8 @@ div.command-bar{
     color: white;
 }
 
-div.command-bar i{
+div.command-bar i,
+div.command-sound i{
     margin: 0 .7rem;
 }
 
@@ -305,9 +322,6 @@ div.command-bar i{
     font-size: 1.6rem;
 }
 
-div.slider {
-
-}
 
 div.slider span{
     color: white;
@@ -315,9 +329,36 @@ div.slider span{
 
 }
 
+div.command-sound{
+    height: 100%;
+}
+
 section.taskbar span{
     display: block;
 }
+
+div.w1-border,
+div.w2-border{
+    height: 4px;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-color: #75787C;
+    background-color: #75787C;
+    margin: 0 1rem;
+}
+
+div.w1-grey,
+div.w2-grey{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+
+div.w2-border{
+width: 100px;
+}
+
 
 
 @media screen and (min-width:576px){
