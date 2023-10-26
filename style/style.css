@@ -36,6 +36,10 @@ body{
     background-color: #282828;
 }
 
+.p-relative{
+    position: relative;
+}
+
 /* SECTION */
 
 div.big-container{
@@ -267,7 +271,6 @@ section article.square,
     width: calc(50% - .5rem);
     margin-right: .5rem;   
     text-align: center;
-    position: relative;
 }
 
 article.circular img{
@@ -288,17 +291,19 @@ article.circular:hover img {
     filter: brightness(0.7);
 }
 
+
 section.container-playlist .fa-circle-play{
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
 }
 
 section article.square:hover i,
 section article.circular:hover i{
-    display: block;
-    position: absolute;
-    top: calc(116.167px / 2);
-    width: calc(116.167px / 2);
-    transform: translate(-50% , -50%);
+    /* transform: translate(-50% , -50%); */
     display: inline-block;
 }
 
@@ -341,6 +346,7 @@ div.title-track span{
 div.command-bar{
     flex-direction: column;
     color: white;
+    width: 530px;
 }
 
 div.like i,
@@ -364,6 +370,15 @@ div.command-bar i{
     font-size: 1.6rem;
 }
 
+div.slider{
+    width: 100%;
+}
+
+div.play{
+    min-width: 200px;
+}
+
+
 
 div.slider span{
     color: white;
@@ -382,7 +397,7 @@ section.taskbar span{
 div.w1-border,
 div.w2-border{
     height: 4px;
-    width: 300px;
+    width: 100%;
     border: 1px solid;
     border-radius: 1rem;
     border-color: #75787C;
