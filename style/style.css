@@ -73,7 +73,7 @@ aside div{
 aside img{
     height: 22px;    
     margin-bottom: .3rem;
-    color: #D2D2D2;
+    color: #75787C;
 }
 
 aside img.logo-small{
@@ -104,8 +104,16 @@ aside section.navbar span{
     font-weight: 800;
 }
 
-section.navbar span:hover{
-    border-left: 1px solid lime;
+aside span:hover,
+li:hover,
+img:hover{
+    color: white;
+    cursor: pointer;
+    filter: brightness(1.7)
+}
+
+aside div.create-playlist:hover button{
+    background-color: white;
 }
 
 aside section.profile span.color-white{
@@ -186,6 +194,7 @@ button.button-download{
 
 button.button-download:hover{
     transform: scale(1.07);
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -198,11 +207,13 @@ header ul{
     justify-content: center;
     margin: 0 .5rem;
     display: inline;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 header ul li:hover{
-    border-bottom: 1px solid lime;
+    border-bottom: 2px solid lime;
+    cursor: pointer;
+    color: white;
 }
 
 ul li{
@@ -211,7 +222,7 @@ ul li{
     font-weight: 800;
     margin: 1rem .5rem;
     list-style-type: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 /* SECTION MAIN FIRST PLAYLIST */
@@ -256,15 +267,41 @@ section article.square,
     width: calc(50% - .5rem);
     margin-right: .5rem;   
     text-align: center;
-}
-
-section.container-playlist img{
-    width: 100%;
+    position: relative;
 }
 
 article.circular img{
     border-radius: 50%;
 }
+
+section.container-playlist img{
+    width: 100%;
+}
+/* HOVER SECTION CONTAINER PLAYLIST */
+section article.square,
+article.circular:hover {
+    cursor: pointer;
+}
+
+section article.square:hover img,
+article.circular:hover img {
+    filter: brightness(0.7);
+}
+
+section.container-playlist .fa-circle-play{
+    display: none;
+}
+
+section article.square:hover i,
+section article.circular:hover i{
+    display: block;
+    position: absolute;
+    top: calc(116.167px / 2);
+    width: calc(116.167px / 2);
+    transform: translate(-50% , -50%);
+    display: inline-block;
+}
+
 
 /* SECTION TASKBAR */
 
@@ -406,7 +443,6 @@ div.w2-border{
         margin-bottom: .3rem;
         margin-right: .5rem;
         color: #75787C;
-    /* color: #D2D2D2; */
     }
 
     main{
@@ -415,6 +451,7 @@ div.w2-border{
         overflow: auto;
         height: calc(100% - 70px);
     }
+
 
 }
 
