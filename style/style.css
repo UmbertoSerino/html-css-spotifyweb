@@ -64,13 +64,6 @@ main{
     height: calc(100% - 70px);
 }
 
-section.taskbar{
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-}
-
 /* Section Aside */
 aside div{
     width: 100%;
@@ -278,7 +271,12 @@ article.circular img{
 section.taskbar{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
 }
+
 
 .taskbar div.soundtrack,
 div.command-bar,
@@ -291,11 +289,11 @@ div.command-sound{
 }
 
 .taskbar img{
-    height: 100%;
+    height: 60%;
 }
 
 div.title-track{
-    margin: 0 2rem 0 1rem;
+    margin: 0 1rem 0 1rem;
 }
 
 div.title-track span{
@@ -303,19 +301,26 @@ div.title-track span{
     font-weight: bold;    
 }
 
-div.like i{
-    color: #75787C;
-    margin-left: .3rem;
-}
-
 div.command-bar{
     flex-direction: column;
     color: white;
 }
 
-div.command-bar i,
+div.like i,
 div.command-sound i{
-    margin: 0 .7rem;
+    color: #75787C;
+    margin-left: .3rem;
+}
+
+div.command-sound i{
+    color: #75787C;
+    margin-left: .5rem;
+    font-size: .72rem;
+}
+
+
+div.command-bar i{
+    margin: 0 .5rem;
 }
 
 .fa-circle-play{
@@ -340,7 +345,7 @@ section.taskbar span{
 div.w1-border,
 div.w2-border{
     height: 4px;
-    width: 400px;
+    width: 300px;
     border: 1px solid;
     border-radius: 1rem;
     border-color: #75787C;
@@ -356,9 +361,8 @@ div.w2-grey{
 }
 
 div.w2-border{
-width: 100px;
+    width: 90px;
 }
-
 
 
 @media screen and (min-width:576px){
