@@ -27,6 +27,19 @@ body{
     color: white;
 }
 
+ul li{
+    font-size: .66rem;
+    color: #75787C;
+    font-weight: 800;
+    margin: 1rem .5rem;
+    list-style-type: none;
+    border-bottom: 2px solid transparent;
+}
+
+span{
+    color: #75787C;
+}
+
 /* Background-color */
 .bg-color-black{
     background-color: #000000;
@@ -71,11 +84,35 @@ main{
     height: calc(100% - 70px);
 }
 
+section.taskbar{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+
 /* Section Aside */
+
 aside div{
     width: 100%;
     text-align: center;
+    padding-left: .2rem;
+    border-left: 1px solid transparent;
 }
+
+aside ul li{
+    border-left: 2px solid transparent;
+    padding-left: .5rem;
+}
+
+
+aside div.border-lime:hover,
+aside ul li:hover{
+    border-left: 2px solid lime;
+}
+
 aside img{
     height: 22px;    
     margin-bottom: .3rem;
@@ -172,12 +209,6 @@ aside span.bg-color-gray{
     color: black;
 }
 
-ul,
-li, 
-span{
-    color: #75787C;
-}
-
 /* SECTION UP-GRADE */
 
 button.button-download{
@@ -215,15 +246,6 @@ header ul li:hover{
     border-bottom: 2px solid lime;
     cursor: pointer;
     color: white;
-}
-
-ul li{
-    font-size: .66rem;
-    color: #75787C;
-    font-weight: 800;
-    margin: 1rem .5rem;
-    list-style-type: none;
-    border-bottom: 2px solid transparent;
 }
 
 /* SECTION MAIN FIRST PLAYLIST */
@@ -305,15 +327,6 @@ section article.circular:hover i{
 }
 
 /* SECTION TASKBAR */
-
-section.taskbar{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-}
 
 .taskbar div.soundtrack,
 div.command-bar,
