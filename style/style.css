@@ -19,6 +19,14 @@ body{
     justify-content: space-between;
 }
 
+.p-relative{
+    position: relative;
+}
+
+.color-white{
+    color: white;
+}
+
 /* Background-color */
 .bg-color-black{
     background-color: #000000;
@@ -36,15 +44,10 @@ body{
     background-color: #282828;
 }
 
-.p-relative{
-    position: relative;
-}
-
 /* SECTION */
 
 div.big-container{
     height: 100vh;
-
 }
 
 section.up-grade{
@@ -73,7 +76,6 @@ aside div{
     width: 100%;
     text-align: center;
 }
-
 aside img{
     height: 22px;    
     margin-bottom: .3rem;
@@ -83,7 +85,6 @@ aside img{
 aside img.logo-small{
     height: 24px;
     margin: .3rem .5rem .7rem;
-
 }
 
 aside h2{
@@ -110,7 +111,9 @@ aside section.navbar span{
 
 aside span:hover,
 li:hover,
-img:hover{
+main img:hover,
+div.like i:hover,
+div.title-track span:last-of-type:hover{
     color: white;
     cursor: pointer;
     filter: brightness(1.7)
@@ -135,12 +138,6 @@ aside section.profile div:first-child {
     border-bottom: 1px solid gray;
     width: 80%;
 }
-
-
-.color-white{
-    color: white;
-}
-
 
 aside img.logo-big,
 span,
@@ -280,7 +277,9 @@ article.circular img{
 section.container-playlist img{
     width: 100%;
 }
+
 /* HOVER SECTION CONTAINER PLAYLIST */
+
 section article.square,
 article.circular:hover {
     cursor: pointer;
@@ -291,22 +290,19 @@ article.circular:hover img {
     filter: brightness(0.7);
 }
 
-
 section.container-playlist .fa-circle-play{
     display: none;
     position: absolute;
+    font-size: 3rem;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-
 }
 
 section article.square:hover i,
 section article.circular:hover i{
-    /* transform: translate(-50% , -50%); */
     display: inline-block;
 }
-
 
 /* SECTION TASKBAR */
 
@@ -318,7 +314,6 @@ section.taskbar{
     height: 70px;
     width: 100%;
 }
-
 
 .taskbar div.soundtrack,
 div.command-bar,
@@ -361,13 +356,16 @@ div.command-sound i{
     font-size: .72rem;
 }
 
-
 div.command-bar i{
     margin: 0 .5rem;
 }
 
 .fa-circle-play{
     font-size: 1.6rem;
+}
+
+div.command-bar .fa-circle-play:hover{
+    transform: scale(1.2);
 }
 
 div.slider{
@@ -378,12 +376,9 @@ div.play{
     min-width: 200px;
 }
 
-
-
 div.slider span{
     color: white;
     font-size: .66rem;
-
 }
 
 div.command-sound{
@@ -416,6 +411,26 @@ div.w2-border{
     width: 90px;
 }
 
+div.slider:hover .w1-grey,
+div.command-sound:hover .w2-grey{
+    background-color: lime;
+}
+
+div.scroll-thumb{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 100%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+div.slider:hover .scroll-thumb,
+div.command-sound:hover .scroll-thumb{
+    display: block;
+}
 
 @media screen and (min-width:576px){
 
@@ -466,7 +481,6 @@ div.w2-border{
         overflow: auto;
         height: calc(100% - 70px);
     }
-
 
 }
 
